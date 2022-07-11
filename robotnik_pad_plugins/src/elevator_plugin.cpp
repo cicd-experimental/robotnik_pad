@@ -17,7 +17,7 @@ void PadPluginElevator::initialize(const ros::NodeHandle& nh, const std::string&
 
   readParam(pnh_, "config/deadman", button_dead_man_, button_dead_man_, required);
   readParam(pnh_, "config/axis_elevator_up", axis_elevator_up_, axis_elevator_up_, required);
-	readParam(pnh_, "config/axis_elevator_up", axis_elevator_down_, axis_elevator_down_, required);
+	readParam(pnh_, "config/axis_elevator_down", axis_elevator_down_, axis_elevator_down_, required);
   readParam(pnh_, "elevator_service_name", elevator_service_name_, elevator_service_name_, required);
 
   // Service client

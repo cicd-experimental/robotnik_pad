@@ -21,26 +21,26 @@ public:
   //! Set the button as 'pressed'/'released'
   void press(float value)
   {
-    if (is_pressed_pos and !(value > 0.01))
+    if (is_pressed_pos and !(value > 0))
     {
       is_released_pos = true;
     }
-    else if (is_released_pos and (value > 0.01))
+    else if (is_released_pos and (value > 0))
 			is_released_pos = false;
 
-		if (is_pressed_neg and !(value < 0.01))
+		if (is_pressed_neg and !(value < 0))
 		{
 			is_released_neg = true;
 		}
-		else if (is_released_neg and (value < 0.01))
+		else if (is_released_neg and (value < 0))
 			is_released_neg = false;
 
-		if (value > 0.01)
+		if (value > 0)
 			is_pressed_pos = true;
 		else
 			is_pressed_pos = false;
 
-		if (value < 0.01)
+		if (value < 0)
 			is_pressed_neg = true;
 		else
 			is_pressed_neg = false;
