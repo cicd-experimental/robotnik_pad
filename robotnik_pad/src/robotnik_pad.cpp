@@ -127,8 +127,7 @@ void RobotnikPad::readyState()
 
 	for (auto& axes : axes_)
   {
-    axes.resetReleasedPos();
-		axes.resetReleasedNeg();
+    axes.resetReleased();
   }
 }
 

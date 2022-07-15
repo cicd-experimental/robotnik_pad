@@ -67,14 +67,10 @@ public:
     return is_released_neg;
   }
 
-  void resetReleasedPos()
+	void resetReleased()
   {
-    if (is_released_pos)
+		if (is_released_pos)
       is_released_pos = false;
-  }
-
-	void resetReleasedNeg()
-  {
     if (is_released_neg)
       is_released_neg = false;
   }
