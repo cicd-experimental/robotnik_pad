@@ -13,7 +13,7 @@ public:
   ~PadPluginElevator();
 
   virtual void initialize(const ros::NodeHandle &nh, const std::string &plugin_ns);
-  virtual void execute(const std::vector<Button> &buttons, std::vector<Axes> &axes);
+  virtual void execute(const std::vector<Button> &buttons, const std::vector<Axes> &axes);
 
 protected:
   int button_dead_man_;

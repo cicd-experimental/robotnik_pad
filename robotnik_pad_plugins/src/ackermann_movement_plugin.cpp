@@ -47,7 +47,7 @@ void PadPluginAckermannMovement::initialize(const ros::NodeHandle& nh, const std
   movement_status_msg_ = robotnik_pad_msgs::MovementStatus();
 }
 
-void PadPluginAckermannMovement::execute(const std::vector<Button>& buttons, std::vector<Axes>& axes)
+void PadPluginAckermannMovement::execute(const std::vector<Button>& buttons, const std::vector<Axes>& axes)
 {
   if (buttons[button_dead_man_].isPressed())
   {

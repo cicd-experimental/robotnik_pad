@@ -67,7 +67,7 @@ void PadPluginMovement::initialize(const ros::NodeHandle& nh, const std::string&
   watchdog_activated_ = false;
 }
 
-void PadPluginMovement::execute(const std::vector<Button>& buttons, std::vector<Axes>& axes)
+void PadPluginMovement::execute(const std::vector<Button>& buttons, const std::vector<Axes>& axes)
 {
   if (buttons[button_dead_man_].isPressed())
   {

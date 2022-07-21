@@ -16,7 +16,7 @@ public:
 
 public:
   virtual void initialize(const ros::NodeHandle& nh, const std::string& plugin_ns) = 0;
-  virtual void execute(const std::vector<Button>& buttons, std::vector<Axes>& axes) = 0;
+  virtual void execute(const std::vector<Button>& buttons, const std::vector<Axes>& axes) = 0;
   virtual ~GenericPadPlugin()
   {
   }

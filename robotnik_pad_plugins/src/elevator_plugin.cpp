@@ -24,7 +24,7 @@ void PadPluginElevator::initialize(const ros::NodeHandle& nh, const std::string&
   set_elevator_client_ = nh_.serviceClient<robotnik_msgs::SetElevator>(elevator_service_name_);
 }
 
-void PadPluginElevator::execute(const std::vector<Button>& buttons, std::vector<Axes>& axes)
+void PadPluginElevator::execute(const std::vector<Button>& buttons, const std::vector<Axes>& axes)
 {
   if (buttons[button_dead_man_].isPressed())
   {
