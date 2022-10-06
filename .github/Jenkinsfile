@@ -1,0 +1,3 @@
+rosPipeline(
+    projects: 'cicd-experimental-organization/rcomponent/melodic-devel'
+)
